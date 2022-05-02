@@ -745,6 +745,7 @@
 .row {
   margin-left: -15px;
   margin-right: -15px;
+  display: flex;
 }
 .row::after {
   content: " ";
@@ -849,10 +850,10 @@
 /** Text Align*/
 
 /** Float */
-.left {
+.f-left {
   float: left;
 }
-.right {
+.f-right {
   float: right;
 }
 /** Float */
@@ -900,42 +901,72 @@ article img {
 /** Image */
 
 /** Display */
-.hidden {
-  display: none;
+.d-none {
+  display: none !important;
 }
-.visible {
-  display: block;
+.d-block {
+  display: block !important;
+}
+.d-inline-block {
+  display: inline-block !important;
+}
+.d-flex {
+  display: flex !important;
 }
 @media (min-width: 1200px) {
-  .visible-lg {
+  .d-lg-block {
     display: block !important;
   }
-  .hidden-lg {
+  .d-lg-inline-block {
+    display: inline-block !important;
+  }
+  .d-lg-none {
     display: none !important;
+  }
+  .d-lg-flex {
+    display: flex !important;
   }
 }
 @media (max-width: 1199px) and (min-width: 980px) {
-  .hidden-md {
+  .d-md-none {
     display: none !important;
   }
-  .visible-md {
+  .d-md-block {
     display: block !important;
+  }
+  .d-md-inline-block {
+    display: block !important;
+  }
+  .d-md-flex {
+    display: flex !important;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  .hidden-sm {
+  .d-sm-none {
     display: none !important;
   }
-  .visible-sm {
+  .d-sm-block {
     display: block !important;
+  }
+  .d-sm-inline-block {
+    display: block !important;
+  }
+  .d-sm-flex {
+    display: flex !important;
   }
 }
 @media (max-width: 767px) {
-  .hidden-xs {
+  .d-xs-none {
     display: none !important;
   }
-  .visible-xs {
+  .d-xs-block {
     display: block !important;
+  }
+  .d-xs-inline-block {
+    display: block !important;
+  }
+  .d-xs-flex {
+    display: flex !important;
   }
 }
 /** Display */
@@ -962,7 +993,7 @@ article img {
   padding-bottom: 75%;
 }
 .embed-responsive.embed-responsive-16by9 {
-  padding-bottom: 75%;
+  padding-bottom: 56.75%;
 }
 .embed-responsive.embed-responsive-4by3 iframe,
 .embed-responsive.embed-responsive-4by3 blockquote,
@@ -973,11 +1004,20 @@ article img {
 }
 /** Embed */
 
-/* Floats */
-.pull-left {
-  float: left !important;
+/** Width **/
+.w-100 {
+  width: 100%;
+  max-width: 100%;
 }
-.pull-right {
-  float: right !important;
+.w-50 {
+  width: 50%;
+  max-width: 50%;
 }
-/* Floats */
+.w-25 {
+  width: 25%;
+  max-width: 25%;
+}
+.w-auto {
+  width: auto;
+}
+/** Width **/
