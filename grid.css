@@ -837,6 +837,12 @@
   .container {
     width: auto;
   }
+.row {
+flex-wrap:wrap
+}
+.row-reverse {
+flex-wrap:wrap-reverse
+}
   .text-xs-center {
     text-align: center;
   }
