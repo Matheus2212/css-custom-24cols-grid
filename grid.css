@@ -1036,6 +1036,14 @@
   text-align: justify;
 }
 
+.text-white {
+  color: #FFFFFF;
+}
+
+.text-black {
+  color: #000000;
+}
+
 .text-lg-center {
   text-align: center;
 }
